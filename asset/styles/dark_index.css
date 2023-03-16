@@ -1,0 +1,41 @@
+body {
+    background-image: url("/asset/images/index/fumée_nb.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    min-height: 100%;
+    min-width: none;
+}
+
+h1 {
+    font-size : 8rem;
+    display: flex;
+    text-align: center;
+    justify-content: space-around;
+    font-family: var(--title-font);
+    color: aqua;
+}
+
+
+h2 {
+    text-align: center;
+    display: flex;
+    margin : 5rem;
+    justify-content: space-around;
+    font-family: var(--main-font);
+  
+
+}
+
+button {
+background-color: bisque;
+padding: 0.5rem;
+}
+
+.contact-button{
+    display: flex;
+    justify-content: center;
+}
+
+.lightMode {
+    display:none;
+}
