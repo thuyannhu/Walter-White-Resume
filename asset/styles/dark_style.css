@@ -1,11 +1,12 @@
 :root {
   --primary-color: rgb(233, 236, 237);
   --secondary-color: #7fb68b;
-  --accent-color: #f78753;
+  --accent-color: #e5eeff;
   --background-color: rgb(0, 0, 0);
 
-  --main-font: ;
-  --title-font: ;
+  --main-font: Biko_Regular;
+  --title-font: Biko_Bold;
+  --light-font : Biko_Light;
 
   --text-font-size: 1.2rem;
   --small-title-font-size: 2rem;
@@ -17,6 +18,20 @@
   padding: 0;
   box-sizing: border-box;
 }
+
+@font-face {
+    font-family: Biko_Regular;
+    src: url("/asset/styles/fonts/Biko_Regular.otf");
+  }
+
+  @font-face {
+    font-family: Biko_Bold;
+    src: url("/asset/styles/fonts/Biko_Bold.otf");
+  }
+  @font-face {
+    font-family: Biko_Light;
+    src: url("/asset/styles/fonts/Biko_Light-Restricted.otf");
+  }
 /* Gestion de la navbar en burger */
 .navbarBurger {
   overflow: hidden;
@@ -31,6 +46,7 @@
   text-decoration: none;
   font-size: 17px;
   display: block;
+  font-family: var(--main-font);
 }
 
 .navbarBurger #liens {
@@ -61,6 +77,7 @@
   text-decoration: none;
   color: bisque;
   padding: 1rem;
+  font-family: var(--main-font);
 }
 
 .navbarDesktop a:hover {
@@ -74,6 +91,7 @@
   background-color: bisque;
   padding: 0.5rem;
   margin: 0.5rem;
+  font-family: var(--main-font);
 }
 .footer {
   position: absolute;
@@ -81,6 +99,11 @@
   bottom: 0;
   width: 100%;
   padding: 5px;
+  font-family: var(--main-font);
+}
+
+.lightMode {
+  display:none;
 }
 
 /* Responsivité : switch de navbar desktop au menu burger */
@@ -90,15 +113,6 @@
     display: none;
   }
 }
-
-/* @media screen and (min-width:769px) and (max-width:1024x){
-    .navbarBurger {
-        display: none;
-    }
-    .navbarBurger a.bouton{
-        display : none;
-    }
-} */
 
 @media screen and (min-width: 769px) {
   .navbarBurger {

@@ -4,8 +4,8 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link id="theme" rel="stylesheet" href="asset/styles/light_index.css"/> 
-    <link rel="stylesheet" href="asset/styles/style.css"/>
+    <link id="theme" rel="stylesheet" href="asset/styles/light_style.css"/> 
+    <link rel="stylesheet" href="asset/styles/index.css"/>
     <title>Document</title>
   </head>
   <body>
@@ -14,11 +14,11 @@
     <a href="#home" class="active"></a>
     
     <div id="liens">
-        <a href="#">Accueil</a>
-        <a href="#">Parcours professionnel</a>
-        <a href="#">Portfolio</a>
-        <a href="#">Recommandations</a>
-        <a href="#">Contact</a>
+        <a href="index.html">Accueil</a>
+        <a href="/asset/html/parcours.html">Parcours professionnel</a>
+        <a href="/asset/html/portfolio.html">Portfolio</a>
+        <a href="/asset/html/recommandation.html">Recommandations</a>
+        <a href="/asset/html/contact.html">Contact</a>
     </div>     
         <!-- par défaut, le lien ne retourne rien et empêche le refresh. En cas de clic, appelle la fonction menu Burger -->
         <a href="javascript:void(0);" class="bouton" onclick="menuBurger()"> </a>
@@ -28,11 +28,11 @@
 </div> 
     <div class="navbarDesktop">
       <ul>
-          <a href="#">Accueil</a>
-          <a href="#">Parcours professionnel</a>
-          <a href="#">Portfolio</a>
-          <a href="#">Recommandations</a>
-          <a href="#">Contact</a>
+          <a href="index.html">Accueil</a>
+          <a href="/asset/html/parcours.html">Parcours professionnel</a>
+          <a href="/asset/html/portfolio.html">Portfolio</a>
+          <a href="/asset/html/recommandation.html">Recommandations</a>
+          <a href="/asset/html/contact.html">Contact</a>
       </ul>
 </div>
 <button class="theme-button" onclick="toggleTheme()">Switch</button>
@@ -41,11 +41,13 @@
 
 
 </div>
+<div class="intro">
       <h1 class="lightMode">Walter White</h1>
       <h1 class="darkMode"> Heisenberg</h1>
       <h2 class="lightMode">Professeur de chimie depuis plus de vingt ans, je suis passionné par l'enseignement et par la chimie organique. Mon expertise technique est également à votre disposition pour des projets industriels</h2>
       <h2 class="darkMode">Si vous êtes ici, c'est que vous savez qui je suis.</h2>
-      <div class="contact-button"><button>Contactez-moi</button>
+</div>
+      <div class="contact-button"><button onclick="/asset/html/contact.html">Contactez-moi</button>
       </div>
       
   </body>
