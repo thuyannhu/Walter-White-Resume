@@ -1,6 +1,6 @@
 Gestion du dark mode
 Pour utiliser le dark mode sur la page il faut :
-1) inclure le fichier CSS light_style sur sa page HTML : link id="theme" rel="stylesheet" href="/asset/styles/light_style.css"/
+1) inclure le fichier CSS light_style sur sa page HTML en premier fichier CSS sur la page : link id="theme" rel="stylesheet" href="/asset/styles/light_style.css"/
 2) inclure le fichier JS après le </body> mais avant </html> afin de pouvoir utiliser la fonction qui permet de changer de fichier 
 CSS :  <script src="asset/js/index.js"></script>
 3) donner la classe darkMode et lightMode en fonction de ce qu'on veut faire apparaitre. Attention de bien respecter la casse
@@ -8,3 +8,32 @@ et l'orthographe.
 
 Gestion de la nav bar 
 1) Copier coller le code HTML suivant :
+ <link rel="stylesheet" href="https://www.flaticon.com/free-icon/menu_2976215?term=menu&page=1&position=2&origin=tag&related_id=2976215">
+    <div class="navbarBurger">
+    <a href="#home" class="active"></a>
+    
+    <div id="liens">
+        <a href="index.html">Accueil</a>
+        <a href="/asset/html/parcours.html">Parcours professionnel</a>
+        <a href="/asset/html/portfolio.html">Portfolio</a>
+        <a href="/asset/html/recommandation.html">Recommandations</a>
+        <a href="/asset/html/contact.html">Contact</a>
+    </div>     
+        <!-- par défaut, le lien ne retourne rien et empêche le refresh. En cas de clic, appelle la fonction menu Burger -->
+        <a href="javascript:void(0);" class="bouton" onclick="menuBurger()"> </a>
+</div>
+      
+      </div>
+</div> 
+    <div class="navbarDesktop">
+      <ul>
+          <a href="index.html">Accueil</a>
+          <a href="/asset/html/parcours.html">Parcours professionnel</a>
+          <a href="/asset/html/portfolio.html">Portfolio</a>
+          <a href="/asset/html/recommandation.html">Recommandations</a>
+          <a href="/asset/html/contact.html">Contact</a>
+      </ul>
+</div>
+<button class="theme-button" onclick="toggleTheme()">Switch</button>
+
+</div>

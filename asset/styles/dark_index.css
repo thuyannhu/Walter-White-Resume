@@ -1,0 +1,182 @@
+body {
+    background-image: url("/asset/images/index/fumée_nb.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+    min-width: none;
+}
+
+h1 {
+    font-size :800%;
+    display: flex;
+    text-align: center;
+    justify-content: space-around;
+    margin: 5vh;
+}
+
+h2 {
+    text-align: center;
+    display: flex;
+    margin : 5rem;
+    font-family: var(--main-font);
+  
+
+}
+
+button {
+background-color: bisque;
+padding: 0.5rem;
+}
+
+.contact-button{
+    display: flex;
+    justify-content: center;
+}
+
+.intro {
+    height: 70vh;
+}
+
+@media screen and (min-width: 769px) {
+    .contact-button {
+      display: flex;
+      justify-content: flex-end;
+      margin-right: 5rem;
+    }
+  }
+
+  :root {
+    --primary-color: rgb(242, 237, 232);
+    --secondary-color: #7fb68b;
+    --accent-color: #e5eeff;
+    --background-color: rgb(36, 36, 36);
+  
+    --main-font: Biko_Regular;
+    --title-font: Biko_Bold;
+    --light-font : Biko_Light;
+  
+    --text-font-size: 1.2rem;
+    --small-title-font-size: 2rem;
+    --big-title-font-size: 4rem;
+  }
+  
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    background-color: var(--background-color) ;
+  }
+  
+  h1 {
+    font-family: var(--title-font);
+    color:var(--primary-color);
+  }
+  
+  
+  
+  @font-face {
+      font-family: Biko_Regular;
+      src: url("/asset/styles/fonts/Biko_Regular.otf");
+    }
+  
+    @font-face {
+      font-family: Biko_Bold;
+      src: url("/asset/styles/fonts/Biko_Bold.otf");
+    }
+    @font-face {
+      font-family: Biko_Light;
+      src: url("/asset/styles/fonts/Biko_Light-Restricted.otf");
+    }
+  /* Gestion de la navbar en burger */
+  .navbarBurger {
+    overflow: hidden;
+    background-color: #2f2f2f;
+    position: absolute;
+    top: 0;
+  }
+  
+  .navbarBurger a {
+    color: rgb(210, 203, 185);
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+    display: block;
+    font-family: var(--main-font);
+  }
+  
+  .navbarBurger #liens {
+    display: none;
+  }
+  
+  /* style du bouton */
+  .navbarBurger a.bouton {
+    background-image: url("/asset/images/index/menu.png");
+    background-size: cover;
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 0;
+  }
+  
+  .navbarBurger a:hover {
+    color: black;
+  }
+  
+  /* Gestion de la navbar en desktop */
+  
+  .navbarDesktop {
+    padding: 1rem;
+    background-color: var(--primary-color);
+  }
+  
+  .navbarDesktop a {
+    text-decoration: none;
+    color: var(--background-color);
+    padding: 1rem;
+    font-family: var(--main-font);
+  }
+  
+  .navbarDesktop a:hover {
+    color: aquamarine;
+  }
+  
+  .theme-button {
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-color: bisque;
+    padding: 0.5rem;
+    margin: 0.5rem;
+    font-family: var(--main-font);
+  }
+  .footer {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    padding: 5px;
+    font-family: var(--main-font);
+  }
+  
+  .LightMode {
+    display:none;
+  }
+  
+  /* Responsivité : switch de navbar desktop au menu burger */
+  
+  @media screen and (max-width: 768px) {
+    .navbarDesktop {
+      display: none;
+    }
+  }
+  
+  
+  @media screen and (min-width: 769px) {
+    .navbarBurger {
+      display: none;
+    }
+  }
+  
