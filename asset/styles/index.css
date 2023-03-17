@@ -1,5 +1,5 @@
 body {
-    background-image: url("/asset/images/index/fumée_nb.jpg");
+    background-image: url("/asset/images/index/fumée.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     min-height: 100%;
@@ -7,20 +7,19 @@ body {
 }
 
 h1 {
-    font-size : 8rem;
+    font-size :800%;
     display: flex;
     text-align: center;
     justify-content: space-around;
     font-family: var(--title-font);
-    color: aqua;
+    color:var(--accent-color);
+    margin: 5vh;
 }
-
 
 h2 {
     text-align: center;
     display: flex;
     margin : 5rem;
-    justify-content: space-around;
     font-family: var(--main-font);
   
 
@@ -36,6 +35,18 @@ padding: 0.5rem;
     justify-content: center;
 }
 
-.lightMode {
-    display:none;
+
+
+
+.intro {
+    height: 70vh;
 }
+
+@media screen and (min-width: 769px) {
+    .contact-button {
+      display: flex;
+      justify-content: flex-end;
+      margin-right: 5rem;
+    }
+  }
+  

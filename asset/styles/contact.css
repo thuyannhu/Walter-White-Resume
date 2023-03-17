@@ -1,0 +1,30 @@
+.contactContainer{
+    display: flex;
+    justify-content: space-around;
+    margin:1rem;
+}
+
+form{
+    width:50%;
+    
+}
+
+#name{
+    width:30%;
+}
+
+#email{
+    width:30%;
+}
+
+#message{
+    width:50%;
+}
+
+iframe{
+width:50%; 
+height:70vh; 
+margin:1rem;
+border-style: 100px black;;
+}
+
