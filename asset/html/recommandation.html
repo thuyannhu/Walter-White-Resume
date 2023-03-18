@@ -5,11 +5,41 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="../styles/recommandation.css" />
+    <link id="theme" rel="stylesheet" href="../styles/light_style.css" />
+    <link
+      rel="stylesheet"
+      href="https://www.flaticon.com/free-icon/menu_2976215?term=menu&page=1&position=2&origin=tag&related_id=2976215"
+    />
     <title>Recommandations</title>
   </head>
   <body>
     <header>
-      <nav></nav>
+      <nav>
+        <div class="navbarBurger">
+          <a href="#home" class="active"></a>
+          <div id="liens">
+            <a href="../../index.html">Accueil</a>
+            <a href="/asset/html/parcours.html">Parcours professionnel</a>
+            <a href="/asset/html/portfolio.html">Portfolio</a>
+            <a href="/asset/html/recommandation.html">Recommandations</a>
+            <a href="/asset/html/contact.html">Contact</a>
+          </div>
+          <!-- par défaut, le lien ne retourne rien et empêche le refresh. En cas de clic, appelle la fonction menu Burger -->
+          <a href="javascript:void(0);" class="bouton" onclick="menuBurger()">
+          </a>
+        </div>
+
+        <div class="navbarDesktop">
+          <ul>
+            <a href="../../index.html">Accueil</a>
+            <a href="/asset/html/parcours.html">Parcours professionnel</a>
+            <a href="/asset/html/portfolio.html">Portfolio</a>
+            <a href="/asset/html/recommandation.html">Recommandations</a>
+            <a href="/asset/html/contact.html">Contact</a>
+          </ul>
+        </div>
+        <button class="theme-button" onclick="toggleTheme()">Switch</button>
+      </nav>
     </header>
     <main>
       <h1>Recommandations</h1>
@@ -18,7 +48,7 @@
         <input type="radio" name="slide" id="img2" />
         <input type="radio" name="slide" id="img3" />
         <div class="cards">
-          <div class="card1">
+          <div class="card1 lightMode">
             <div class="photo">
               <img
                 src="../images/recommandation/eleve1.jpg"
@@ -34,7 +64,7 @@
               recommander !
             </p>
           </div>
-          <div class="card2">
+          <div class="card2 lightMode">
             <div class="photo">
               <img
                 src="../images/recommandation/eleve2.jpg"
@@ -49,7 +79,7 @@
               pouvoir se mettre à jour par nous même. Je recommande fortement
             </p>
           </div>
-          <div class="card3">
+          <div class="card3 lightMode">
             <div class="photo">
               <img
                 src="../images/recommandation/eleve3.jpg"
@@ -75,4 +105,5 @@
     </main>
     <footer></footer>
   </body>
+  <script src="asset/js/index.js"></script>
 </html>
