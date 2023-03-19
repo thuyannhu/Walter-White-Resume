@@ -1,8 +1,26 @@
 Gestion du dark mode
 Pour utiliser le dark mode sur la page il faut :
-1) inclure le fichier CSS light_style sur sa page HTML en premier fichier CSS sur la page : link id="theme" rel="stylesheet" href="/asset/styles/light_style.css"/
-2) inclure le fichier JS après le </body> mais avant </html> afin de pouvoir utiliser la fonction qui permet de changer de fichier 
-CSS :  <script src="asset/js/index.js"></script>
+1) Inclure le script directement dans le ficheir CSS :
+<script>
+function menuBurger() {
+  var x = document.getElementById("liens");
+  if (x.style.display === "block") {
+    x.style.display = "none";
+  } else {
+    x.style.display = "block";
+  }
+}
+
+function toggleTheme() {
+  var theme = document.getElementsByTagName('link')[0];
+  if(theme.getAttribute('href') == '../styles/light_style.css') {
+    theme.setAttribute('href', '../styles/dark_style.css');
+  } else {
+    theme.setAttribute('href', '../styles/light_style.css');
+  }
+} 
+ </script>
+2) Inclure le fichier CSS :     <link id="theme" rel="stylesheet" href="../styles/light_style.css"/> 
 3) donner la classe darkMode et lightMode en fonction de ce qu'on veut faire apparaitre. Attention de bien respecter la casse
 et l'orthographe.
 
@@ -21,9 +39,7 @@ Gestion de la nav bar
     </div>     
         <!-- par défaut, le lien ne retourne rien et empêche le refresh. En cas de clic, appelle la fonction menu Burger -->
         <a href="javascript:void(0);" class="bouton" onclick="menuBurger()"> </a>
-</div>
-      
-      </div>
+
 </div> 
     <div class="navbarDesktop">
       <ul>
@@ -36,4 +52,12 @@ Gestion de la nav bar
 </div>
 <button class="theme-button" onclick="toggleTheme()">Switch</button>
 
+</div>
+
+-------------------------------------------------------------------------------------------------------------------------------------
+Et pour le footer :
+  <div class="footer">
+  <footer>
+    <p> Benjamin, Oumar, Radu et Thuy An - 2023</p>
+  </footer>
 </div>
