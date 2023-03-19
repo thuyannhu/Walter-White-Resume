@@ -1,9 +1,10 @@
 body {
-    background-image: url("/asset/images/index/fumée_nb.jpg");
+    background-image: url("/asset/images/index/abstract-crop-bw.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     min-height: 100vh;
     min-width: none;
+    background-color: var(--background-color) ;
 }
 
 h1 {
@@ -12,6 +13,8 @@ h1 {
     text-align: center;
     justify-content: space-around;
     margin: 5vh;
+    font-family: var(--title-font);
+    color:var(--accent-color);
 }
 
 h2 {
@@ -19,6 +22,7 @@ h2 {
     display: flex;
     margin : 5rem;
     font-family: var(--main-font);
+    color:var(--primary-color);
   
 
 }
@@ -34,7 +38,11 @@ padding: 0.5rem;
 }
 
 .intro {
-    height: 70vh;
+    height: 70vh;;
+}
+
+.DarkMode{
+    justify-content: space-around;
 }
 
 @media screen and (min-width: 769px) {
@@ -48,7 +56,7 @@ padding: 0.5rem;
   :root {
     --primary-color: rgb(242, 237, 232);
     --secondary-color: #7fb68b;
-    --accent-color: #e5eeff;
+    --accent-color: #35c5e1;
     --background-color: rgb(36, 36, 36);
   
     --main-font: Biko_Regular;
@@ -66,14 +74,7 @@ padding: 0.5rem;
     box-sizing: border-box;
   }
   
-  body {
-    background-color: var(--background-color) ;
-  }
   
-  h1 {
-    font-family: var(--title-font);
-    color:var(--primary-color);
-  }
   
   
   
@@ -129,18 +130,18 @@ padding: 0.5rem;
   
   .navbarDesktop {
     padding: 1rem;
-    background-color: var(--primary-color);
+    background-color: var(--background-color);
   }
   
   .navbarDesktop a {
     text-decoration: none;
-    color: var(--background-color);
+    color: var(--primary-color);
     padding: 1rem;
     font-family: var(--main-font);
   }
   
   .navbarDesktop a:hover {
-    color: aquamarine;
+    color: var(--accent-color);
   }
   
   .theme-button {
@@ -159,6 +160,10 @@ padding: 0.5rem;
     width: 100%;
     padding: 5px;
     font-family: var(--main-font);
+    padding: 5px;
+    background-color: var(--background-color);
+    font-family: var(--main-font);
+    color: var(--primary-color);
   }
   
   .LightMode {
