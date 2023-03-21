@@ -28,7 +28,7 @@ h2 {
 }
 
 button {
-background-color: bisque;
+background-color: var(--primary-color);
 padding: 0.5rem;
 }
 
@@ -54,7 +54,7 @@ padding: 0.5rem;
   }
 
   :root {
-    --primary-color: rgb(242, 237, 232);
+    --primary-color: #edf1f2;
     --secondary-color: #7fb68b;
     --accent-color: #35c5e1;
     --background-color: rgb(36, 36, 36);
@@ -100,7 +100,7 @@ padding: 0.5rem;
   }
   
   .navbarBurger a {
-    color: rgb(210, 203, 185);
+    color: var(--primary-color);
     padding: 14px 16px;
     text-decoration: none;
     font-size: 17px;
@@ -148,7 +148,7 @@ padding: 0.5rem;
     position: absolute;
     top: 0;
     right: 0;
-    background-color: bisque;
+    background-color: var(--primary-color);
     padding: 0.5rem;
     margin: 0.5rem;
     font-family: var(--main-font);
