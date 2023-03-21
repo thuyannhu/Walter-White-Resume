@@ -4,21 +4,51 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link id="theme" rel="stylesheet" href="../styles/light_style.css" />
     <link rel="stylesheet" href="../styles/recommandation.css" />
+    <link
+      rel="stylesheet"
+      href="https://www.flaticon.com/free-icon/menu_2976215?term=menu&page=1&position=2&origin=tag&related_id=2976215"
+    />
     <title>Recommandations</title>
   </head>
   <body>
     <header>
-      <nav></nav>
+      <nav>
+        <div class="navbarBurger">
+          <a href="#home" class="active"></a>
+          <div id="liens">
+            <a href="../../index.html">Accueil</a>
+            <a href="/asset/html/parcours.html">Parcours professionnel</a>
+            <a href="/asset/html/portfolio.html">Portfolio</a>
+            <a href="/asset/html/recommandation.html">Recommandations</a>
+            <a href="/asset/html/contact.html">Contact</a>
+          </div>
+          <!-- par défaut, le lien ne retourne rien et empêche le refresh. En cas de clic, appelle la fonction menu Burger -->
+          <a href="javascript:void(0);" class="bouton" onclick="menuBurger()">
+          </a>
+        </div>
+
+        <div class="navbarDesktop">
+          <ul>
+            <a href="../../index.html">Accueil</a>
+            <a href="/asset/html/parcours.html">Parcours professionnel</a>
+            <a href="/asset/html/portfolio.html">Portfolio</a>
+            <a href="/asset/html/recommandation.html">Recommandations</a>
+            <a href="/asset/html/contact.html">Contact</a>
+          </ul>
+        </div>
+        <button class="theme-button" onclick="toggleTheme()">Switch</button>
+      </nav>
     </header>
     <main>
       <h1>Recommandations</h1>
       <div class="slider">
-        <input type="radio" name="slide" id="img1" checked />
+        <!-- <input type="radio" name="slide" id="img1" checked />
         <input type="radio" name="slide" id="img2" />
-        <input type="radio" name="slide" id="img3" />
+        <input type="radio" name="slide" id="img3" /> -->
         <div class="cards">
-          <div class="card1">
+          <div class="card1 LightMode">
             <div class="photo">
               <img
                 src="../images/recommandation/eleve1.jpg"
@@ -34,7 +64,23 @@
               recommander !
             </p>
           </div>
-          <div class="card2">
+          <div class="card1 darkMode">
+            <div class="photo">
+              <img
+                src="../images/recommandation/gang_cagoule.jpg"
+                class="photo1"
+                alt="Deux gangster avec cagoule fluo"
+              />
+            </div>
+            <h3 class="cardTitle">Tic & Tac</h3>
+            <p class="cardText">
+              Nous sommes des fans inconditionnel des produits d'Heisenberg. La
+              qualité est toujours au rendez-vous, et nous sommes constamment
+              impressionnés par sa capacité à innover et à créer de nouveaux
+              produits. C'est vraiment un génie de la chimie.
+            </p>
+          </div>
+          <div class="card2 LightMode">
             <div class="photo">
               <img
                 src="../images/recommandation/eleve2.jpg"
@@ -49,7 +95,25 @@
               pouvoir se mettre à jour par nous même. Je recommande fortement
             </p>
           </div>
-          <div class="card3">
+          <div class="card2 darkMode">
+            <div class="photo">
+              <img
+                src="../images/recommandation/gang_tatoo.jpg"
+                class="photo2"
+                alt="Gangsters tatoués"
+              />
+            </div>
+            <h3 class="cardTitle">Los Nachos Crujientes</h3>
+            <p class="cardText">
+              Les produits d'Heisenberg sont les meilleurs investissements que
+              nous avons fait. La qualité est toujours constante, et nous sommes
+              toujours satisfait de notre expérience d'achat. Si vous cherchez
+              quelque chose de véritablement exceptionnel, les produits
+              d'Heisenberg sont un choix sûr
+            </p>
+          </div>
+
+          <div class="card3 LightMode">
             <div class="photo">
               <img
                 src="../images/recommandation/eleve3.jpg"
@@ -65,14 +129,69 @@
               grand merci, la maman de Timéo.
             </p>
           </div>
+          <div class="card3 darkMode">
+            <div class="photo">
+              <img
+                src="../images/recommandation/labo_industriel.jpg"
+                class="photo3"
+                alt="Usine"
+              />
+            </div>
+            <h3 class="cardTitle">Purdue Pharma</h3>
+            <p class="cardText">
+              Mr Heisenberg a été un excellent partenaire dans notre quête pour
+              améliorer notre production. Sa connaissance de l'industrie
+              chimique et son approche professionnelle ont été très utiles pour
+              notre entreprise. Nous avons été impressionnés par sa capacité à
+              comprendre les enjeux spécifiques de notre entreprise et à
+              proposer des solutions pratiques pour améliorer nos processus de
+              fabrication. Nous le recommandons fortement à toute entreprise
+              cherchant à améliorer sa production.
+            </p>
+          </div>
+          <div class="card1 LightMode">
+            <div class="photo">
+              <img
+                src="../images/recommandation/eleve1.jpg"
+                class="photo1"
+                alt="Etudiante"
+              />
+            </div>
+            <h3 class="cardTitle">Amandine</h3>
+            <p class="cardText">
+              Je remercie Mr White pour les cours de qualité que j'ai pu suivre.
+              La bienveillance, l'écoute, le sérieux et la bonne ambiance ont
+              été au rendez-vous tout au long de mon parcours. Je ne peux que
+              recommander !
+            </p>
+          </div>
+          <div class="card1 darkMode">
+            <div class="photo">
+              <img
+                src="../images/recommandation/gang_cagoule.jpg"
+                class="photo1"
+                alt="Deux gangster avec cagoule fluo"
+              />
+            </div>
+            <h3 class="cardTitle">Tic & Tac</h3>
+            <p class="cardText">
+              Nous sommes des fans inconditionnel des produits d'Heisenberg. La
+              qualité est toujours au rendez-vous, et nous sommes constamment
+              impressionnés par sa capacité à innover et à créer de nouveaux
+              produits. C'est vraiment un génie de la chimie.
+            </p>
+          </div>
         </div>
-        <div class="dots">
+        <!-- <div class="dots">
           <label for="img1"></label>
           <label for="img2"></label>
           <label for="img3"></label>
-        </div>
+        </div> -->
       </div>
     </main>
-    <footer></footer>
+    <footer class="footer">
+      <p>Benjamin, Oumar, Radu et Thuy An - 2023</p>
+    </footer>
   </body>
+  <script src="../js/index.js"></script>
 </html>
