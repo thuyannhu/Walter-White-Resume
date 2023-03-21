@@ -5,7 +5,7 @@
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link id="theme" rel="stylesheet" href="asset/styles/light_parcours.css" />
+    <link id="theme" rel="stylesheet" href="../styles/light_style.css" />
     <title>Parcours</title>
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.5/css/bulma.min.css"
@@ -46,7 +46,9 @@
             <a href="/asset/html/contact.html">Contact</a>
         </ul>
     </div>
-    <button class="theme-button" onclick="toggleThemeIndex()">Switch</button>
+    <button class="theme-button" onclick="toggleTheme()">Switch</button>
+
+    </div>
 
     <div class="section-whois">
         <div class="container">
@@ -323,5 +325,24 @@
     </div>
 
 </body>
+<script>
+    function menuBurger() {
+        var x = document.getElementById("liens");
+        if (x.style.display === "block") {
+            x.style.display = "none";
+        } else {
+            x.style.display = "block";
+        }
+    }
+
+    function toggleTheme() {
+        var theme = document.getElementsByTagName('link')[0];
+        if (theme.getAttribute('href') == '../styles/light_style.css') {
+            theme.setAttribute('href', '../styles/dark_style.css');
+        } else {
+            theme.setAttribute('href', '../styles/light_style.css');
+        }
+    } 
+</script>
 
 </html>

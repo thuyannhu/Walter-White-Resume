@@ -1,67 +1,71 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link id="theme" rel="stylesheet" href="../styles/light_style.css"/> 
-    <link rel="stylesheet" href="../styles/contact.css">
 
-    <title>Document</title>
-  </head>
-  <body>
-    <link rel="stylesheet" href="https://www.flaticon.com/free-icon/menu_2976215?term=menu&page=1&position=2&origin=tag&related_id=2976215">
-    <div class="navbarBurger">
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link id="theme" rel="stylesheet" href="../styles/light_style.css" />
+  <link rel="stylesheet" href="../styles/contact.css">
+
+  <title>Document</title>
+</head>
+
+<body>
+  <link rel="stylesheet"
+    href="https://www.flaticon.com/free-icon/menu_2976215?term=menu&page=1&position=2&origin=tag&related_id=2976215">
+  <div class="navbarBurger">
     <a href="#home" class="active"></a>
-    
+
     <div id="liens">
-        <a href="../../index.html">Accueil</a>
-        <a href="/asset/html/parcours.html">Parcours professionnel</a>
-        <a href="/asset/html/portfolio.html">Portfolio</a>
-        <a href="/asset/html/recommandation.html">Recommandations</a>
-        <a href="/asset/html/contact.html">Contact</a>
-    </div>     
-        <!-- par défaut, le lien ne retourne rien et empêche le refresh. En cas de clic, appelle la fonction menu Burger -->
-        <a href="javascript:void(0);" class="bouton" onclick="menuBurger()"> </a>
-</div>
-      
-      </div>
-</div> 
-    <div class="navbarDesktop">
-      <ul>
-          <a href="../../index.html">Accueil</a>
-          <a href="/asset/html/parcours.html">Parcours professionnel</a>
-          <a href="/asset/html/portfolio.html">Portfolio</a>
-          <a href="/asset/html/recommandation.html">Recommandations</a>
-          <a href="/asset/html/contact.html">Contact</a>
-      </ul>
-</div>
-<button class="theme-button" onclick="toggleTheme()">Switch</button>
+      <a href="index.html">Accueil</a>
+      <a href="/asset/html/parcours.html">Parcours professionnel</a>
+      <a href="/asset/html/portfolio.html">Portfolio</a>
+      <a href="/asset/html/recommandation.html">Recommandations</a>
+      <a href="/asset/html/contact.html">Contact</a>
+    </div>
+    <!-- par défaut, le lien ne retourne rien et empêche le refresh. En cas de clic, appelle la fonction menu Burger -->
+    <a href="javascript:void(0);" class="bouton" onclick="menuBurger()"> </a>
 
-</div>
-</div>
+  </div>
+  <div class="navbarDesktop">
+    <ul>
+      <a href="index.html">Accueil</a>
+      <a href="/asset/html/parcours.html">Parcours professionnel</a>
+      <a href="/asset/html/portfolio.html">Portfolio</a>
+      <a href="/asset/html/recommandation.html">Recommandations</a>
+      <a href="/asset/html/contact.html">Contact</a>
+    </ul>
+  </div>
+  <button class="theme-button" onclick="toggleTheme()">Switch</button>
 
-    <div class="contactContainer">
+  </div>
+
+  <div class="contactContainer">
     <form>
-        <h2 class>Travaillons ensemble!</h2></br>
-        <div>
-            <label for="name">Nom</label>
-            <br/><input type="text" id="name"></br>
-        </div>
-        <div>
-            <br/><label for="email">Email</label><br/><input type="email" id="email"/>
-        </div>
-        <br/>
-        <div>
-          <label for="message">Message</label>
-          <br/><textarea id="message" rows="10"></textarea>
-        </div>
-        <br/>
-        <button type="submit">Envoyer</button>
+      <h2 class>Travaillons ensemble!</h2></br>
+      <div>
+        <label for="name">Nom</label>
+        <br /><input type="text" id="name"></br>
+      </div>
+      <div>
+        <br /><label for="email">Email</label><br /><input type="email" id="email" />
+      </div>
+      <br />
+      <div>
+        <label for="message">Message</label>
+        <br /><textarea id="message" rows="10"></textarea>
+      </div>
+      <br />
+      <button type="submit">Envoyer</button>
     </form>
-      <iframe class="darkMode" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3267.6826518387047!2d-106.68854188482798!3d35.01464838035507!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x87220d0a121604ed%3A0xc185463b0a72dca6!2sLos%20Pollos%20Hermanos!5e0!3m2!1sen!2sfr!4v1679044627247!5m2!1sen!2sfr" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-    <iframe class="lightMode" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7170.631546343565!2d-106.6381026087471!3d35.09606779007879!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x87220d28425cc74f%3A0x37fad8af5a3c2839!2sAlbuquerque%20High%20School!5e0!3m2!1sen!2sfr!4v1679048449455!5m2!1sen!2sfr" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-</div>
+    <iframe class="darkMode"
+      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3267.6826518387047!2d-106.68854188482798!3d35.01464838035507!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x87220d0a121604ed%3A0xc185463b0a72dca6!2sLos%20Pollos%20Hermanos!5e0!3m2!1sen!2sfr!4v1679044627247!5m2!1sen!2sfr"
+      allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    <iframe class="lightMode"
+      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7170.631546343565!2d-106.6381026087471!3d35.09606779007879!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x87220d28425cc74f%3A0x37fad8af5a3c2839!2sAlbuquerque%20High%20School!5e0!3m2!1sen!2sfr!4v1679048449455!5m2!1sen!2sfr"
+      allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+  </div>
 
 </body>
 <div class="footer">
@@ -70,22 +74,23 @@
   </footer>
 </div>
 <script>
-function menuBurger() {
-  var x = document.getElementById("liens");
-  if (x.style.display === "block") {
-    x.style.display = "none";
-  } else {
-    x.style.display = "block";
+  function menuBurger() {
+    var x = document.getElementById("liens");
+    if (x.style.display === "block") {
+      x.style.display = "none";
+    } else {
+      x.style.display = "block";
+    }
   }
-}
 
-function toggleTheme() {
-  var theme = document.getElementsByTagName('link')[0];
-  if(theme.getAttribute('href') == '../styles/light_style.css') {
-    theme.setAttribute('href', '../styles/dark_style.css');
-  } else {
-    theme.setAttribute('href', '../styles/light_style.css');
-  }
-} 
- </script>
+  function toggleTheme() {
+    var theme = document.getElementsByTagName('link')[0];
+    if (theme.getAttribute('href') == '../styles/light_style.css') {
+      theme.setAttribute('href', '../styles/dark_style.css');
+    } else {
+      theme.setAttribute('href', '../styles/light_style.css');
+    }
+  } 
+</script>
+
 </html>
