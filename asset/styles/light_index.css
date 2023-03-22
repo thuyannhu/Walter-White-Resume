@@ -2,7 +2,7 @@
     --primary-color: rgb(36, 36, 36);
   
     --secondary-color: #a9cdaf;
-    --accent-color: #c9cec5;
+    --accent-color: rgb(231, 227, 223);
     --background-color: rgb(242, 237, 232);
   
     --main-font: Biko_Regular;
@@ -89,14 +89,14 @@ button:hover {
   /* Gestion de la navbar en burger */
   .navbarBurger {
     overflow: hidden;
-    background-color: #2f2f2f;
+    margin : 8px;
     position: absolute;
     top: 0;
     z-index: 500;
   }
   
   .navbarBurger a {
-    color: rgb(210, 203, 185);
+    color: var(--primary-color);
     padding: 14px 16px;
     text-decoration: none;
     font-size: 17px;
@@ -105,7 +105,7 @@ button:hover {
   }
   
   .navbarBurger #liens {
-    display: none;
+    background-color:var(--background-color);
   }
   
   /* style du bouton */
@@ -119,7 +119,7 @@ button:hover {
   }
   
   .navbarBurger a:hover {
-    color: black;
+    color: var(--secondary-color);
   }
   
   /* Gestion de la navbar en desktop */
