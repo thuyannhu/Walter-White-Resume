@@ -1,3 +1,9 @@
+p span.vert{
+  color: rgb(57, 113, 57);
+  font-size: larger;
+  font-weight: bold;
+}
+
 body {
     background-image: url("/asset/images/index/abstract-crop-bw.jpg");
     background-size: cover;
@@ -54,7 +60,7 @@ button {
 
 
   :root {
-    --primary-color: #edf1f2;
+    --primary-color: #d6dadb;
     --secondary-color: #b1cccd;
     --accent-color: #717171;
     --background-color: rgb(17, 17, 17);
@@ -92,40 +98,43 @@ button {
       src: url("/asset/styles/fonts/Biko_Light-Restricted.otf");
     }
   /* Gestion de la navbar en burger */
-  .navbarBurger {
-    overflow: hidden;
-    background-color: #2f2f2f;
-    position: absolute;
-    top: 0;
-    z-index: 500;
-  }
-  
-  .navbarBurger a {
-    color: var(--primary-color);
-    padding: 14px 16px;
-    text-decoration: none;
-    font-size: 17px;
-    display: block;
-    font-family: var(--main-font);
-  }
-  
-  .navbarBurger #liens {
-    display: none;
-  }
-  
-  /* style du bouton */
-  .navbarBurger a.bouton {
-    background-image: url("/asset/images/index/menu.png");
-    background-size: cover;
-    display: block;
-    position: absolute;
-    left: 0;
-    top: 0;
-  }
-  
-  .navbarBurger a:hover {
-    color: black;
-  }
+ 
+.navbarBurger {
+  overflow: hidden;
+  position: absolute;
+  top: 0;
+  margin : 8px;
+  z-index: 500;
+}
+
+.navbarBurger a {
+  color: var(--primary-color);
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+  display: block;
+  font-family: var(--main-font);
+}
+
+.navbarBurger #liens {
+  display: none;
+  background-color:rgb(34, 34, 34);
+}
+
+/* style du bouton */
+.navbarBurger a.bouton {
+  background-image: url("/asset/images/index/menu.png");
+  background-size: cover;
+  display: block;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+.navbarBurger a:hover {
+  color: var(--secondary-color);
+
+}
   
   /* Gestion de la navbar en desktop */
   
