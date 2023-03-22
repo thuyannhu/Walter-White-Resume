@@ -44,11 +44,8 @@
     <main>
       <h1>Recommandations</h1>
       <div class="slider">
-        <!-- <input type="radio" name="slide" id="img1" checked />
-        <input type="radio" name="slide" id="img2" />
-        <input type="radio" name="slide" id="img3" /> -->
         <div class="cards">
-          <div class="card1 LightMode">
+          <div class="card1 lightMode">
             <div class="photo">
               <img
                 src="../images/recommandation/eleve1.jpg"
@@ -74,13 +71,13 @@
             </div>
             <h3 class="cardTitle">Tic & Tac</h3>
             <p class="cardText">
-              Nous sommes des fans inconditionnel des produits d'Heisenberg. La
+              Nous sommes des fans inconditionnels des produits d'Heisenberg. La
               qualité est toujours au rendez-vous, et nous sommes constamment
               impressionnés par sa capacité à innover et à créer de nouveaux
               produits. C'est vraiment un génie de la chimie.
             </p>
           </div>
-          <div class="card2 LightMode">
+          <div class="card2 lightMode">
             <div class="photo">
               <img
                 src="../images/recommandation/eleve2.jpg"
@@ -106,14 +103,14 @@
             <h3 class="cardTitle">Los Nachos Crujientes</h3>
             <p class="cardText">
               Les produits d'Heisenberg sont les meilleurs investissements que
-              nous avons fait. La qualité est toujours constante, et nous sommes
-              toujours satisfait de notre expérience d'achat. Si vous cherchez
+              nous ayons fait. La qualité est toujours constante, et nous sommes
+              toujours satisfaits de notre expérience d'achat. Si vous cherchez
               quelque chose de véritablement exceptionnel, les produits
               d'Heisenberg sont un choix sûr
             </p>
           </div>
 
-          <div class="card3 LightMode">
+          <div class="card3 lightMode">
             <div class="photo">
               <img
                 src="../images/recommandation/eleve3.jpg"
@@ -149,7 +146,7 @@
               cherchant à améliorer sa production.
             </p>
           </div>
-          <div class="card1 LightMode">
+          <div class="card1 lightMode">
             <div class="photo">
               <img
                 src="../images/recommandation/eleve1.jpg"
@@ -175,23 +172,36 @@
             </div>
             <h3 class="cardTitle">Tic & Tac</h3>
             <p class="cardText">
-              Nous sommes des fans inconditionnel des produits d'Heisenberg. La
+              Nous sommes des fans inconditionnels des produits d'Heisenberg. La
               qualité est toujours au rendez-vous, et nous sommes constamment
               impressionnés par sa capacité à innover et à créer de nouveaux
               produits. C'est vraiment un génie de la chimie.
             </p>
           </div>
         </div>
-        <!-- <div class="dots">
-          <label for="img1"></label>
-          <label for="img2"></label>
-          <label for="img3"></label>
-        </div> -->
       </div>
     </main>
     <footer class="footer">
       <p>Benjamin, Oumar, Radu et Thuy An - 2023</p>
     </footer>
   </body>
-  <script src="../js/index.js"></script>
+  <script>
+    function menuBurger() {
+      var x = document.getElementById("liens");
+      if (x.style.display === "block") {
+        x.style.display = "none";
+      } else {
+        x.style.display = "block";
+      }
+    }
+
+    function toggleTheme() {
+      var theme = document.getElementsByTagName("link")[0];
+      if (theme.getAttribute("href") == "../styles/light_style.css") {
+        theme.setAttribute("href", "../styles/dark_style.css");
+      } else {
+        theme.setAttribute("href", "../styles/light_style.css");
+      }
+    }
+  </script>
 </html>
