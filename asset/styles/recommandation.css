@@ -20,14 +20,14 @@ h1 {
 .slider1,
 .slider2 {
   margin-top: 3%;
-  max-width: 35vw;
+  max-width: 40vw;
   box-shadow: 1px -1px 31px 1px rgba(120, 120, 120, 1);
 
   border-radius: 15px;
   overflow: hidden;
 }
 .slider2 {
-  margin-left: 10%;
+  margin-left: 5%;
 }
 
 .cards {
@@ -52,6 +52,12 @@ h1 {
   width: 100%;
   object-fit: cover;
   object-position: top;
+}
+
+.labo,
+.cagoule,
+.gang {
+  object-position: bottom;
 }
 
 .cardTitle {
@@ -95,12 +101,24 @@ h1 {
   }
 }
 
+@media screen and (max-width: 890px) {
+  .darkMode h3 {
+    font-size: 1.6rem;
+  }
+}
+
 @media screen and (max-width: 768px) {
   body {
     min-height: auto;
   }
   h1 {
     font-size: var(--small-title-font-size);
+    margin-top: 5%;
+  }
+
+  .slider1 {
+    max-width: 70vw;
+    height: 60%;
     margin-top: 5%;
   }
 
