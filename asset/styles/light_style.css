@@ -1,8 +1,8 @@
 :root {
   --primary-color: rgb(36, 36, 36);
-
-  --secondary-color: #7fb68b;
-  --accent-color: #e5eeff;
+  
+  --secondary-color: #a9cdaf;
+  --accent-color: #c9cec5;
   --background-color: rgb(242, 237, 232);
 
   --main-font: Biko_Regular;
@@ -52,6 +52,7 @@ h1 {
   background-color: #2f2f2f;
   position: absolute;
   top: 0;
+  z-index: 500;
 }
 
 .navbarBurger a {
@@ -96,7 +97,7 @@ h1 {
 }
 
 .navbarDesktop a:hover {
-  color: rgb(149, 179, 113);
+  color: var(--secondary-color);
 }
 
 .theme-button {
@@ -107,6 +108,9 @@ h1 {
   padding: 0.5rem;
   margin: 0.5rem;
   font-family: var(--main-font);
+}
+button:hover {
+  background-color: var(--secondary-color);
 }
 .footer {
   position: absolute;
@@ -131,15 +135,6 @@ h1 {
     display: none;
   }
 }
-
-/* @media screen and (min-width:769px) and (max-width:1024x){
-    .navbarBurger {
-        display: none;
-    }
-    .navbarBurger a.bouton{
-        display : none;
-    }
-} */
 
 @media screen and (min-width: 769px) {
   .navbarBurger {

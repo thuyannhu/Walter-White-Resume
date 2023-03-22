@@ -1,8 +1,8 @@
   :root {
     --primary-color: rgb(36, 36, 36);
   
-    --secondary-color: #7fb68b;
-    --accent-color: #dbe8ff;
+    --secondary-color: #a9cdaf;
+    --accent-color: #c9cec5;
     --background-color: rgb(242, 237, 232);
   
     --main-font: Biko_Regular;
@@ -37,7 +37,7 @@ h1 {
 h2 {
     text-align: center;
     display: flex;
-    margin : 5rem;
+    margin : 5rem 20rem;
     font-family: var(--main-font);
     color:var(--primary-color);
   
@@ -45,8 +45,14 @@ h2 {
 }
 
 button {
-background-color: bisque;
-padding: 0.5rem;
+background-color: var(--background-color);
+padding: 1rem;
+color: var(--primary-color);
+font-family: var(--main-font);
+}
+
+button:hover {
+  background-color: var(--secondary-color);
 }
 
 .contact-button{
@@ -61,13 +67,6 @@ padding: 0.5rem;
     height: 70vh;
 }
 
-@media screen and (min-width: 769px) {
-    .contact-button {
-      display: flex;
-      justify-content: flex-end;
-      margin-right: 5rem;
-    }
-  }
 
   
 
@@ -98,6 +97,7 @@ padding: 0.5rem;
     background-color: #2f2f2f;
     position: absolute;
     top: 0;
+    z-index: 500;
   }
   
   .navbarBurger a {
@@ -142,7 +142,7 @@ padding: 0.5rem;
   }
   
   .navbarDesktop a:hover {
-    color: olive;
+    color: var(--secondary-color);
   }
   
   .theme-button {
@@ -175,20 +175,28 @@ padding: 0.5rem;
     .navbarDesktop {
       display: none;
     }
+    h1 {
+      font-size: 650%;
+    }
+    h2 {
+      margin:2rem;
+    }
   }
-  
-  /* @media screen and (min-width:769px) and (max-width:1024x){
-      .navbarBurger {
-          display: none;
-      }
-      .navbarBurger a.bouton{
-          display : none;
-      }
-  } */
   
   @media screen and (min-width: 769px) {
     .navbarBurger {
-      display: none;
+      display: none;  
     }
+    .contact-button {
+      display: flex;
+      justify-content: flex-end;
+      margin-right: 5rem;
+    }
+
+    .contact-button {
+      display: flex;
+      justify-content: flex-end;
+      margin-right: 5rem;
   }
+}
   

@@ -25,7 +25,13 @@ form{
 }
 button{
     padding: 1rem;
-    background-color:var(--secondary-color) ;
+    background-color:var(--background-color) ;
+    color:var(--primary-color);
+    border: var(--primary-color) solid 1px;
+    font-family: var(--main-font);
+}
+button:hover{
+    background-color:var(--accent-color) ;
 }
 .form-button{
     display: flex;
