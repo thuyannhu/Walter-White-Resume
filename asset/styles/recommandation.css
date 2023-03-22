@@ -20,7 +20,7 @@ h1 {
 .slider1,
 .slider2 {
   margin-top: 3%;
-  max-width: 40vw;
+  max-width: 35vw;
   box-shadow: 1px -1px 31px 1px rgba(120, 120, 120, 1);
 
   border-radius: 15px;
@@ -101,9 +101,13 @@ h1 {
   }
 }
 
-@media screen and (max-width: 890px) {
+@media screen and (max-width: 1013px) {
   .darkMode h3 {
     font-size: 1.6rem;
+  }
+  .slider1,
+  .slider2 {
+    max-width: 40vw;
   }
 }
 
@@ -119,7 +123,7 @@ h1 {
   .slider1 {
     max-width: 70vw;
     height: 60%;
-    margin-top: 5%;
+    margin-top: 10%;
   }
 
   .slider2 {
