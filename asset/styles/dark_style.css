@@ -12,7 +12,9 @@
   --small-title-font-size: 2rem;
   --big-title-font-size: 4rem;
 }
-
+p span.vert{
+  color: darkgreen;
+}
 * {
   margin: 0;
   padding: 0;

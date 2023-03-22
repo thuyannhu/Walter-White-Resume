@@ -1,3 +1,7 @@
+p span.vert{
+  color: darkgreen;
+}
+
 body {
     background-image: url("/asset/images/index/abstract-crop-bw.jpg");
     background-size: cover;
