@@ -123,7 +123,7 @@ button {
 
 /* style du bouton */
 .navbarBurger a.bouton {
-  background-image: url("/asset/images/index/menu.png");
+  background-image: url("/asset/images/index/menu_blanc.png");
   background-size: cover;
   display: block;
   position: absolute;
