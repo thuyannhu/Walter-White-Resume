@@ -17,7 +17,7 @@ h1 {
 
 .slider {
   max-width: 45vw;
-  margin: 3% auto;
+  margin: 2% auto;
 }
 
 .cards {
@@ -41,7 +41,7 @@ h1 {
 }
 
 .photo img {
-  height: 50vh;
+  height: 45vh;
   width: 100%;
   object-fit: cover;
   object-position: top;
@@ -58,6 +58,15 @@ h1 {
 
 .cardText {
   padding: 2% 3% 2% 2%;
+}
+
+.lightMode {
+  color: var(--primary-color);
+}
+
+.darkMode {
+  color: var(--secondary-color);
+  box-shadow: 0px 0px 20px 5px rgba(255, 255, 255, 0.66);
 }
 
 /*  Partie animation */
@@ -80,26 +89,12 @@ h1 {
   }
 }
 
-/* .slider input {
-  display: none;
+@media screen and (max-width: 768px) {
+  body {
+    min-height: auto;
+  }
+  h1 {
+    font-size: var(--small-title-font-size);
+    margin-top: 5%;
+  }
 }
-
-.dots {
-  display: flex;
-  justify-content: center;
-  margin: 5px;
-}
-
-.dots label {
-  height: 20px;
-  width: 20px;
-  border-radius: 50%;
-  border: solid 3px black;
-  cursor: pointer;
-  transition: all 0.15 ease;
-  margin: 5px;
-}
-
-.dots label:hover {
-  background: black;
-} */
