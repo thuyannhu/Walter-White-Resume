@@ -6,7 +6,7 @@
 
   --main-font: Biko_Regular;
   --title-font: Biko_Bold;
-  --light-font : Biko_Light;
+  --light-font: Biko_Light;
 
   --text-font-size: 1.2rem;
   --small-title-font-size: 2rem;
@@ -20,33 +20,31 @@
 }
 
 body {
-  background-color: var(--background-color) ;
+  background-color: var(--background-color);
   min-height: 100vh;
   min-width: none;
   font-family: var(--main-font);
-  color:var(--secondary-color);
+  color: var(--secondary-color);
 }
 
 h1 {
   font-family: var(--title-font);
-  color:var(--secondary-color);
+  color: var(--secondary-color);
 }
 
-
+@font-face {
+  font-family: Biko_Regular;
+  src: url("/asset/styles/fonts/Biko_Regular.otf");
+}
 
 @font-face {
-    font-family: Biko_Regular;
-    src: url("/asset/styles/fonts/Biko_Regular.otf");
-  }
-
-  @font-face {
-    font-family: Biko_Bold;
-    src: url("/asset/styles/fonts/Biko_Bold.otf");
-  }
-  @font-face {
-    font-family: Biko_Light;
-    src: url("/asset/styles/fonts/Biko_Light-Restricted.otf");
-  }
+  font-family: Biko_Bold;
+  src: url("/asset/styles/fonts/Biko_Bold.otf");
+}
+@font-face {
+  font-family: Biko_Light;
+  src: url("/asset/styles/fonts/Biko_Light-Restricted.otf");
+}
 /* Gestion de la navbar en burger */
 .navbarBurger {
   overflow: hidden;
@@ -122,7 +120,7 @@ h1 {
 }
 
 .lightMode {
-  display:none;
+  display: none;
 }
 
 /* Responsivité : switch de navbar desktop au menu burger */
@@ -133,7 +131,6 @@ h1 {
   }
 }
 
-
 @media screen and (min-width: 769px) {
   .navbarBurger {
     display: none;
@@ -142,14 +139,14 @@ h1 {
 
 /* Page contact */
 
-#name{
+#name {
   background-color: var(--secondary-color);
 }
 
-#email{
+#email {
   background-color: var(--secondary-color);
 }
 
-#message{
+#message {
   background-color: var(--secondary-color);
 }
