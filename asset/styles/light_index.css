@@ -38,7 +38,7 @@ h1 {
 h2 {
     text-align: center;
     display: flex;
-    margin : 5rem;
+    margin : 5rem 20rem;
     font-family: var(--main-font);
     color:var(--primary-color);
   
@@ -53,10 +53,10 @@ font-family: var(--main-font);
 }
 
 button:hover {
-  background-color: var(--secondary-color);
+  background-color: var(--accent-color);
 }
 
-.contact-button{
+.contact-button {
     display: flex;
     justify-content: center;
 }

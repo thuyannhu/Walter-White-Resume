@@ -17,6 +17,7 @@ h1 {
   display: flex;
   justify-content: center;
 }
+
 .slider1,
 .slider2 {
   margin-top: 3%;
@@ -26,6 +27,7 @@ h1 {
   border-radius: 15px;
   overflow: hidden;
 }
+
 .slider2 {
   margin-left: 5%;
 }
@@ -84,18 +86,22 @@ h1 {
 /*  Partie animation */
 
 @keyframes slider-horizontal1 {
+
   0%,
   28% {
     transform: translateX(0);
   }
+
   33%,
   61% {
     transform: translateX(-100%);
   }
+
   66%,
   94% {
     transform: translateX(-200%);
   }
+
   100% {
     transform: translateX(-300%);
   }
@@ -105,6 +111,7 @@ h1 {
   .darkMode h3 {
     font-size: 1.6rem;
   }
+
   .slider1,
   .slider2 {
     max-width: 40vw;
@@ -115,6 +122,7 @@ h1 {
   body {
     min-height: auto;
   }
+
   h1 {
     font-size: var(--small-title-font-size);
     margin-top: 5%;
