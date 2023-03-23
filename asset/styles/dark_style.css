@@ -49,6 +49,7 @@ h1 {
   font-family: Biko_Light;
   src: url("/asset/styles/fonts/Biko_Light-Restricted.otf");
 }
+
 /* Gestion de la navbar en burger */
 .navbarBurger {
   overflow: hidden;
@@ -134,6 +135,10 @@ h1 {
 }
 
 .lightMode {
+  display: none;
+}
+
+.walter {
   display: none;
 }
 

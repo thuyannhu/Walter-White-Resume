@@ -1,0 +1,34 @@
+.section-whois {
+    display: flex;
+    border-radius: 15px;
+    background: #af8f37;
+    text-align: center;
+    text-decoration: none;
+    color: rgb(8, 8, 8);
+    padding: 20px;
+    margin: 100px;
+}
+
+.walter-title {
+    font-size: 60px;
+}
+
+.walter-resume {
+    font-size: 35px;
+}
+
+.heisenberg-title {
+    font-size: 60px;
+}
+
+.heisenberg-resume {
+    font-size: 35px;
+}
+
+.walter-experience {
+    font-size: 20px;
+}
+
+.heisenberg-experience {
+    font-size: 20px;
+}
