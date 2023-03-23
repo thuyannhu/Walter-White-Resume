@@ -117,9 +117,19 @@ h1 {
   font-family: var(--main-font);
   color: var(--primary-color);
 }
-.theme-button:hover {
-  background-color: var(--accent-color);
+
+
+button{
+  padding: 1rem;
+  background-color:var(--background-color) ;
+  color:var(--primary-color);
+  border: var(--primary-color) solid 1px;
+  font-family: var(--main-font);
 }
+button:hover{
+  background-color:var(--accent-color) ;
+}
+
 
 .footer {
   position: fixed;
