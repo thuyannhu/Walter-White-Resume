@@ -6,25 +6,49 @@
 
 }
 
+.titre{
+    font-weight: bold;
+    font-family: sans-serif;
+
+}
+
 
 .experience{
     background-image: url("https://fr.shopping.rakuten.com/photo/1706457048_L.jpg"); 
     background-size: cover;
-    background-repeat: no-repeat;
     display: flex;
     align-items: center;
     justify-content: space-around;
-    border: 3px solid black;
+    border-radius: 10px;
+    box-shadow: 10px;
+    border: 3px solid burlywood;
+    padding: 20px;
     width: 320px;
-    height: 580px;
+    height: 530px;
+    margin-top: 30px;
+}
+
+.experience1{
+    background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQWhOSO_jKXYwqvOXzi1mCo_hybpVbW4dcvWg&usqp=CAU");
+    background-size: center,cover;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    border-radius: 10px;
+    box-shadow: 10px;
+    border: 3px solid burlywood;
+    padding: 20px;
+    width: 320px;
+    height: 530px;
+    margin-top: 30px;
 
 }
 .experience p{
     color: rgb(19, 17, 17);
     font-family: sans-serif;
     font-size: 20px;
-    font-weight: bold;
     text-align: justify;
+    align-items: center;
     
     
 }
@@ -35,30 +59,43 @@
     justify-content: center;
    
 }
-.element1, .element2, .element6, .element7{
+.element1, .element2, .element6, .element7 p {
     justify-content:space-between;
     width:350px;
     height: 200px;
     margin: 40px;
-    border: 3px solid black;
+    border-radius: 10px;
+    box-shadow: 10px;
+    border: 3px solid burlywood;
+    text-align: justify;
+    text-align: center;
+    font-family: sans-serif;
+
     
 } 
-.element3, .element4, .element5, .element8, .element9, .element10{
-    width: 250px;
-    height: 150px;
+.element3, .element4, .element5, .element8, .element9, .element10 p{
+    width: 300px;
+    height: 170px;
     margin: 5px 5px;
-    border: 3px solid black;
+    border-radius: 10px;
+    box-shadow: 10px;
+    border: 3px solid burlywood;
+    text-align: justify;
+    text-align: center;
+    font-family: sans-serif;
+
+
 }
 .element1{
-    background-image: url("https://st3.depositphotos.com/1177973/14608/i/1600/depositphotos_146083729-stock-photo-scientist-working-in-laboratory.jpg");
+    background-image: url("https://pixabay.com/get/g518f3337df13b1eadeac681f23873ca7e887ae94dc7409c90370fc672df5f10752d406ea310d49dcdb455ea4068b484d6364dc3232797ff6562d58f37c3dc3ed_640.jpg");
     background-size: cover;
 }
 .element2{
-    background-image: url("https://cdn.futura-sciences.com/buildsv6/images/mediumoriginal/6/5/e/65eda9b59b_101467_01-intro-1561.jpg");
+    background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS-WvZW-hRRSkykZ0qelVTEJTQMf-GDGHAi8Q&usqp=CAU");
     background-size: cover;
 }
 .element3{
-    background-image: url("https://cdn.futura-sciences.com/sources/images/dossier/1561/canonique-1561.jpg");
+    background-image: url("https://pixabay.com/get/g554750f5a7e69465207e74e08dd4e1a54f164582a122ba759f00108f24981d648c8b4b3f88cc7d36a9d024de3ea0b375_640.jpg");
     background-size: cover;
 }
 .element4{
@@ -70,15 +107,23 @@
     background-size: cover;
 }
 .element6{
-    background-image: url("img/10.jpg");
+    background-image: url("https://www.shutterstock.com/image-vector/heroin-diacetylmorphine-opioid-drug-molecule-260nw-1975675226.jpg");
     background-size: cover;
 }
 .element7{
-    background-image: url("img/11.jpg");
-    background-size: cover;
+    background-image: url("");
+    background-size: cover; 
 }
 .element8{
-    background-image: url("img/12.jpg");
+    background-image: url("https://crimenb.ca/wp-content/uploads/2022/08/druglab.jpg");
     background-size: cover;
+}
+.element9{
+    background-image: url("https://img.passeportsante.net/1200x675/2022-04-06/shutterstock-1524354695.webp");
+    background-size: cover;
+}
+.element10{
+    background-image: url("https://www.tntv.pf/tntv/wp-content/uploads/313885cab8.jpeg");
+    background-size: center,cover;
 }
 

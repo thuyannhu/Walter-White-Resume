@@ -41,102 +41,109 @@
         <button class="theme-button" onclick="toggleTheme()">Switch</button>
       </nav>
     </header>
-    <main>
+    <main><div class="lightMode">
+      <div class="container">
+          <div class="content experience">
+              <p>Le paracétamol, aussi appelé acétaminophène, est un composé chimique utilisé comme antalgique (anti-douleur) et antipyrétique (anti-fièvre), qui figure parmi les médicaments les plus communs, utilisés et prescrits au monde..
+              </p>
+              
+          </div>
+          <div class="content-2">
+              <div class="element1">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus, explicabo.
+              </p>
+              </div>
+              <div class="element2">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus, explicabo.
+              </p>
+              </div>
+              
+          </div>
+          <div class="content col">
+              <div class="element3">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus, explicabo.
+                </p>
+              </div>
+              <div class="element4">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus, explicabo.
+                </p>
+              </div>
+              <div class="element5">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus, explicabo.
+              </p>
+              </div>
+              
+              
+          </div>
+      </div>
+  </div>
 
-    
-</body>
-<div class="lightMode">
+  <div class="darkMode">
     <div class="container">
-        <div class="content experience">
+        <div class="content experience1">
             <p>Le paracétamol, aussi appelé acétaminophène, est un composé chimique utilisé comme antalgique (anti-douleur) et antipyrétique (anti-fièvre), qui figure parmi les médicaments les plus communs, utilisés et prescrits au monde..
             </p>
             
         </div>
         <div class="content-2">
-            <div class="element1">
-              p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus, explicabo.
+            <div class="element6">
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus, explicabo.
             </p>
             </div>
-            <div class="element2">
-              p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus, explicabo.
+            <div class="element7">
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus, explicabo.
             </p>
             </div>
             
         </div>
         <div class="content col">
-            <div class="element3">
+            <div class="element8">
               <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus, explicabo.
               </p>
             </div>
-            <div class="element4">
+            <div class="element9">
               <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus, explicabo.
               </p>
             </div>
-            <div class="element5">
-              p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus, explicabo.
+            <div class="element10">
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus, explicabo.
             </p>
             </div>
             
             
         </div>
     </div>
-    </div>
-    <div class="darkMode">
-<div class="container">
-    <div class="content experience">
-        <p>Le paracétamol, aussi appelé acétaminophène, est un composé chimique utilisé comme antalgique (anti-douleur) et antipyrétique (anti-fièvre), qui figure parmi les médicaments les plus communs, utilisés et prescrits au monde..
-        </p>
-        
-    </div>
-    <div class="content-2">
-        <div class="element6">
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus, explicabo.
-            </p>
-        </div>
-        <div class="element7">
-          p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus, explicabo.
-            </p>
-        </div>
-        
-    </div>
-    <div class="content col">
-        <div class="element8">
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus, explicabo.
-        </p>
-        </div>
-        <div class="element9">
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus, explicabo.
-            </p>
-        </div>
-        <div class="element10">
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus, explicabo.
-            </p>
-        </div>
-        
-        
-    </div> 
-    <footer class="footer">
-      <p> <span class ="vert">Be</span>njamin, <span class ="vert">O</span>umar, <span class ="vert">Ra</span>du et <span class ="vert">Th</span>uy An - 2023</p>  
-    </footer>
-  </main>
-</body>
-   <script>
-    function menuBurger() {
-      var x = document.getElementById("liens");
-      if (x.style.display === "block") {
-        x.style.display = "none";
-      } else {
-        x.style.display = "block";
-      }
+</div>
+
+
+
+ </main>
+
+ <div class="footer">
+  <footer>
+      <p> <span class="vert">Be</span>njamin, <span class="vert">O</span>umar, <span class="vert">Ra</span>du
+          et <span class="vert">Th</span>uy An - 2023</p>
+  </footer>
+  </div>
+ 
+<script>
+  function menuBurger() {
+    var x = document.getElementById("liens");
+    if (x.style.display === "block") {
+      x.style.display = "none";
+    } else {
+      x.style.display = "block";
     }
-    
-    function toggleTheme() {
-      var theme = document.getElementsByTagName('link')[0];
-      if(theme.getAttribute('href') == '../styles/light_style.css') {
-        theme.setAttribute('href', '../styles/dark_style.css');
-      } else {
-        theme.setAttribute('href', '../styles/light_style.css');
-      }
-    } 
-     </script>
+  }
+  
+  function toggleTheme() {
+    var theme = document.getElementsByTagName('link')[0];
+    if(theme.getAttribute('href') == '../styles/light_style.css') {
+      theme.setAttribute('href', '../styles/dark_style.css');
+    } else {
+      theme.setAttribute('href', '../styles/light_style.css');
+    }
+  } 
+   </script>
+</body> 
 </html>
