@@ -118,7 +118,7 @@ h1 {
 }
 
 button:hover {
-  background-color: var(--secondary-color);
+  background-color: var(--accent-color);
 }
 
 .footer {
