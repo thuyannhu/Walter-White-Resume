@@ -1,7 +1,7 @@
 :root {
-  --primary-color: rgb(36, 36, 36);
-  --secondary-color: #edf1f2;
-  --accent-color: #042563;
+  --primary-color: #d6dadb;
+  --secondary-color: #b1cccd;
+  --accent-color: #717171;
   --background-color: rgb(17, 17, 17);
 
   --main-font: Biko_Regular;
@@ -12,7 +12,11 @@
   --small-title-font-size: 2rem;
   --big-title-font-size: 4rem;
 }
-
+p span.vert{
+  color: rgb(57, 113, 57);
+  font-size: larger;
+  font-weight: bold;
+}
 * {
   margin: 0;
   padding: 0;
@@ -32,8 +36,6 @@ h1 {
   color: var(--secondary-color);
 }
 
-
-
 @font-face {
   font-family: Biko_Regular;
   src: url("/asset/styles/fonts/Biko_Regular.otf");
@@ -43,7 +45,6 @@ h1 {
   font-family: Biko_Bold;
   src: url("/asset/styles/fonts/Biko_Bold.otf");
 }
-
 @font-face {
   font-family: Biko_Light;
   src: url("/asset/styles/fonts/Biko_Light-Restricted.otf");
@@ -52,13 +53,14 @@ h1 {
 /* Gestion de la navbar en burger */
 .navbarBurger {
   overflow: hidden;
-  background-color: #2f2f2f;
   position: absolute;
   top: 0;
+  margin : 8px;
+  z-index: 500;
 }
 
 .navbarBurger a {
-  color: var(--secondary-color);
+  color: var(--primary-color);
   padding: 14px 16px;
   text-decoration: none;
   font-size: 17px;
@@ -68,11 +70,12 @@ h1 {
 
 .navbarBurger #liens {
   display: none;
+  background-color: rgb(34, 34, 34);
 }
 
 /* style du bouton */
 .navbarBurger a.bouton {
-  background-image: url("/asset/images/index/menu.png");
+  background-image: url("/asset/images/index/menu_blanc.png");
   background-size: cover;
   display: block;
   position: absolute;
@@ -81,35 +84,41 @@ h1 {
 }
 
 .navbarBurger a:hover {
-  color: black;
+  color: var(--secondary-color);
+
 }
 
 /* Gestion de la navbar en desktop */
 
 .navbarDesktop {
   padding: 1rem;
-  background-color: var(--primary-color);
+  background-color: var(--background-color);
+  color:var(--primary-color);
 }
 
 .navbarDesktop a {
   text-decoration: none;
-  color: var(--secondary-color);
+  color: var(--primary-color);
   padding: 1rem;
   font-family: var(--main-font);
 }
 
 .navbarDesktop a:hover {
-  color: aquamarine;
+  color: var(--secondary-color);
 }
 
 .theme-button {
   position: absolute;
   top: 0;
   right: 0;
-  background-color: var(--secondary-color);
+  background-color: var(--background-color);
   padding: 0.5rem;
   margin: 0.5rem;
   font-family: var(--main-font);
+  color: var(--primary-color);
+}
+.theme-button:hover {
+  background-color: var(--accent-color);
 }
 
 .footer {
@@ -117,11 +126,12 @@ h1 {
   left: 0;
   bottom: 0;
   width: 100%;
+  padding: 5px;
   font-family: var(--main-font);
   padding: 5px;
-  background-color: var(--primary-color);
+  background-color: var(--background-color);
   font-family: var(--main-font);
-  color: var(--secondary-color);
+  color: var(--primary-color);
 }
 
 .lightMode {
@@ -140,23 +150,9 @@ h1 {
   }
 }
 
-
 @media screen and (min-width: 769px) {
   .navbarBurger {
     display: none;
   }
 }
 
-/* Page contact */
-
-#name {
-  background-color: var(--secondary-color);
-}
-
-#email {
-  background-color: var(--secondary-color);
-}
-
-#message {
-  background-color: var(--secondary-color);
-}

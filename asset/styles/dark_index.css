@@ -1,8 +1,14 @@
+p span.vert{
+  color: rgb(57, 113, 57);
+  font-size: larger;
+  font-weight: bold;
+}
+
 body {
     background-image: url("/asset/images/index/abstract-crop-bw.jpg");
     background-size: cover;
     background-repeat: no-repeat;
-    min-height: 100vh;
+    min-height: 80vh;
     min-width: none;
     background-color: var(--background-color) ;
 }
@@ -14,7 +20,7 @@ h1 {
     justify-content: space-around;
     margin: 5vh;
     font-family: var(--title-font);
-    color:var(--accent-color);
+    color:var(--secondary-color);
 }
 
 h2 {
@@ -28,9 +34,16 @@ h2 {
 }
 
 button {
-background-color: var(--primary-color);
-padding: 0.5rem;
-}
+  padding: 1rem;
+  background-color:var(--background-color) ;
+  color:var(--primary-color);
+  border: var(--primary-color) solid 1px;
+  font-family: var(--main-font);
+  }
+
+  button:hover {
+    background-color: var(--secondary-color);
+  }
 
 .contact-button{
     display: flex;
@@ -38,26 +51,19 @@ padding: 0.5rem;
 }
 
 .intro {
-    height: 70vh;;
+    height: 70vh;
 }
 
 .DarkMode{
     justify-content: space-around;
 }
 
-@media screen and (min-width: 769px) {
-    .contact-button {
-      display: flex;
-      justify-content: flex-end;
-      margin-right: 5rem;
-    }
-  }
 
   :root {
-    --primary-color: #edf1f2;
-    --secondary-color: #7fb68b;
-    --accent-color: #35c5e1;
-    --background-color: rgb(36, 36, 36);
+    --primary-color: #d6dadb;
+    --secondary-color: #b1cccd;
+    --accent-color: #717171;
+    --background-color: rgb(17, 17, 17);
   
     --main-font: Biko_Regular;
     --title-font: Biko_Bold;
@@ -92,39 +98,43 @@ padding: 0.5rem;
       src: url("/asset/styles/fonts/Biko_Light-Restricted.otf");
     }
   /* Gestion de la navbar en burger */
-  .navbarBurger {
-    overflow: hidden;
-    background-color: #2f2f2f;
-    position: absolute;
-    top: 0;
-  }
-  
-  .navbarBurger a {
-    color: var(--primary-color);
-    padding: 14px 16px;
-    text-decoration: none;
-    font-size: 17px;
-    display: block;
-    font-family: var(--main-font);
-  }
-  
-  .navbarBurger #liens {
-    display: none;
-  }
-  
-  /* style du bouton */
-  .navbarBurger a.bouton {
-    background-image: url("/asset/images/index/menu.png");
-    background-size: cover;
-    display: block;
-    position: absolute;
-    left: 0;
-    top: 0;
-  }
-  
-  .navbarBurger a:hover {
-    color: black;
-  }
+ 
+.navbarBurger {
+  overflow: hidden;
+  position: absolute;
+  top: 0;
+  margin : 8px;
+  z-index: 500;
+}
+
+.navbarBurger a {
+  color: var(--primary-color);
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+  display: block;
+  font-family: var(--main-font);
+}
+
+.navbarBurger #liens {
+  display: none;
+  background-color:rgb(34, 34, 34);
+}
+
+/* style du bouton */
+.navbarBurger a.bouton {
+  background-image: url("/asset/images/index/menu_blanc.png");
+  background-size: cover;
+  display: block;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+.navbarBurger a:hover {
+  color: var(--secondary-color);
+
+}
   
   /* Gestion de la navbar en desktop */
   
@@ -148,7 +158,7 @@ padding: 0.5rem;
     position: absolute;
     top: 0;
     right: 0;
-    background-color: var(--primary-color);
+    background-color: var(--background-color);
     padding: 0.5rem;
     margin: 0.5rem;
     font-family: var(--main-font);
@@ -176,12 +186,33 @@ padding: 0.5rem;
     .navbarDesktop {
       display: none;
     }
+    h1 {
+      font-size: 500%;
+      margin:8rem;
+    }
+    h2 {
+      margin:3rem;
+    }
+    .intro{
+      height: 60vh;
+    }
   }
-  
   
   @media screen and (min-width: 769px) {
     .navbarBurger {
-      display: none;
+      display: none;  
     }
+    .contact-button {
+      display: flex;
+      justify-content: flex-end;
+      margin-right: 5rem;
+    }
+
+    .contact-button {
+      display: flex;
+      justify-content: flex-end;
+      margin-right: 5rem;
   }
+}
+  
   

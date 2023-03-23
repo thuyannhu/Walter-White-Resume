@@ -1,8 +1,8 @@
 :root {
   --primary-color: rgb(36, 36, 36);
-
-  --secondary-color: #7fb68b;
-  --accent-color: #e5eeff;
+  
+  --secondary-color: #a9cdaf;
+  --accent-color: rgb(231, 227, 223);
   --background-color: rgb(242, 237, 232);
 
   --main-font: Biko_Regular;
@@ -50,22 +50,28 @@ h1 {
 /* Gestion de la navbar en burger */
 .navbarBurger {
   overflow: hidden;
-  background-color: #2f2f2f;
+  background-color:var(--background-color);
   position: absolute;
   top: 0;
+  z-index: 500;
+  margin : 8px;
 }
 
 .navbarBurger a {
-  color: var(--background-color);
+  color: var(--primary-color);
   padding: 14px 16px;
   text-decoration: none;
   font-size: 17px;
   display: block;
   font-family: var(--main-font);
+ 
+ 
 }
 
 .navbarBurger #liens {
   display: none;
+  background-color:var(--accent-color);
+  
 }
 
 /* style du bouton */
@@ -76,10 +82,11 @@ h1 {
   position: absolute;
   left: 0;
   top: 0;
+   
 }
 
 .navbarBurger a:hover {
-  color: black;
+  color: var(--secondary-color);
 }
 
 /* Gestion de la navbar en desktop */
@@ -97,7 +104,7 @@ h1 {
 }
 
 .navbarDesktop a:hover {
-  color: rgb(149, 179, 113);
+  color: var(--secondary-color);
 }
 
 .theme-button {
@@ -108,6 +115,10 @@ h1 {
   padding: 0.5rem;
   margin: 0.5rem;
   font-family: var(--main-font);
+}
+
+button:hover {
+  background-color: var(--secondary-color);
 }
 
 .footer {
@@ -137,15 +148,6 @@ h1 {
     display: none;
   }
 }
-
-/* @media screen and (min-width:769px) and (max-width:1024x){
-    .navbarBurger {
-        display: none;
-    }
-    .navbarBurger a.bouton{
-        display : none;
-    }
-} */
 
 @media screen and (min-width: 769px) {
   .navbarBurger {

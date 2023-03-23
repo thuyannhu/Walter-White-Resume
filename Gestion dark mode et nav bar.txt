@@ -61,7 +61,7 @@ Gestion de la nav bar
 -------------------------------------------------------------------------------------------------------------------------------------
 Et pour le footer :
   <div class="footer">
-  <footer>
-    <p> Benjamin, Oumar, Radu et Thuy An - 2023</p>
+ <footer>
+    <p> <span class ="vert">Be</span>njamin, <span class ="vert">O</span>umar, <span class ="vert">Ra</span>du et <span class ="vert">Th</span>uy An - 2023</p>  
   </footer>
 </div>
