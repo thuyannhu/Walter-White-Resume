@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link id="theme" rel="stylesheet" href="../styles/light_style.css" />
+    <link rel="stylesheet" href="../styles/portfolio.css" />
+    <link
+      rel="stylesheet"
+      href="https://www.flaticon.com/free-icon/menu_2976215?term=menu&page=1&position=2&origin=tag&related_id=2976215"
+    />
+    <title>Portfolio</title>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <div class="navbarBurger">
+          <a href="#home" class="active"></a>
+          <div id="liens">
+            <a href="../../index.html">Accueil</a>
+            <a href="/asset/html/parcours.html">Parcours professionnel</a>
+            <a href="/asset/html/portfolio.html">Portfolio</a>
+            <a href="/asset/html/recommandation.html">Recommandations</a>
+            <a href="/asset/html/contact.html">Contact</a>
+          </div>
+          <!-- par défaut, le lien ne retourne rien et empêche le refresh. En cas de clic, appelle la fonction menu Burger -->
+          <a href="javascript:void(0);" class="bouton" onclick="menuBurger()">
+          </a>
+        </div>
+
+        <div class="navbarDesktop">
+          <ul>
+            <a href="../../index.html">Accueil</a>
+            <a href="/asset/html/parcours.html">Parcours professionnel</a>
+            <a href="/asset/html/portfolio.html">Portfolio</a>
+            <a href="/asset/html/recommandation.html">Recommandations</a>
+            <a href="/asset/html/contact.html">Contact</a>
+          </ul>
+        </div>
+        <button class="theme-button" onclick="toggleTheme()">Switch</button>
+      </nav>
+    </header>
+    <main>
+
+    
+</body>
+<div class="lightMode">
+    <div class="container">
+        <div class="content experience">
+            <p>Le paracétamol, aussi appelé acétaminophène, est un composé chimique utilisé comme antalgique (anti-douleur) et antipyrétique (anti-fièvre), qui figure parmi les médicaments les plus communs, utilisés et prescrits au monde..
+            </p>
+            
+        </div>
+        <div class="content-2">
+            <div class="element1">
+              p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus, explicabo.
+            </p>
+            </div>
+            <div class="element2">
+              p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus, explicabo.
+            </p>
+            </div>
+            
+        </div>
+        <div class="content col">
+            <div class="element3">
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus, explicabo.
+              </p>
+            </div>
+            <div class="element4">
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus, explicabo.
+              </p>
+            </div>
+            <div class="element5">
+              p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus, explicabo.
+            </p>
+            </div>
+            
+            
+        </div>
+    </div>
+    </div>
+    <div class="darkMode">
+<div class="container">
+    <div class="content experience">
+        <p>Le paracétamol, aussi appelé acétaminophène, est un composé chimique utilisé comme antalgique (anti-douleur) et antipyrétique (anti-fièvre), qui figure parmi les médicaments les plus communs, utilisés et prescrits au monde..
+        </p>
+        
+    </div>
+    <div class="content-2">
+        <div class="element6">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus, explicabo.
+            </p>
+        </div>
+        <div class="element7">
+          p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus, explicabo.
+            </p>
+        </div>
+        
+    </div>
+    <div class="content col">
+        <div class="element8">
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus, explicabo.
+        </p>
+        </div>
+        <div class="element9">
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus, explicabo.
+            </p>
+        </div>
+        <div class="element10">
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus, explicabo.
+            </p>
+        </div>
+        
+        
+    </div> 
+    <footer class="footer">
+      <p> <span class ="vert">Be</span>njamin, <span class ="vert">O</span>umar, <span class ="vert">Ra</span>du et <span class ="vert">Th</span>uy An - 2023</p>  
+    </footer>
+  </main>
+</body>
+   <script>
+    function menuBurger() {
+      var x = document.getElementById("liens");
+      if (x.style.display === "block") {
+        x.style.display = "none";
+      } else {
+        x.style.display = "block";
+      }
+    }
+    
+    function toggleTheme() {
+      var theme = document.getElementsByTagName('link')[0];
+      if(theme.getAttribute('href') == '../styles/light_style.css') {
+        theme.setAttribute('href', '../styles/dark_style.css');
+      } else {
+        theme.setAttribute('href', '../styles/light_style.css');
+      }
+    } 
+     </script>
+</html>

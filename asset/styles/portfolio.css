@@ -1,0 +1,84 @@
+/* @import url(./light_style.css); */
+
+.container{
+    display: flex;
+    justify-content: space-around;
+
+}
+
+
+.experience{
+    background-image: url("https://fr.shopping.rakuten.com/photo/1706457048_L.jpg"); 
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    border: 3px solid black;
+    width: 320px;
+    height: 580px;
+
+}
+.experience p{
+    color: rgb(19, 17, 17);
+    font-family: sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+    text-align: justify;
+    
+    
+}
+.content-2, .content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+   
+}
+.element1, .element2, .element6, .element7{
+    justify-content:space-between;
+    width:350px;
+    height: 200px;
+    margin: 40px;
+    border: 3px solid black;
+    
+} 
+.element3, .element4, .element5, .element8, .element9, .element10{
+    width: 250px;
+    height: 150px;
+    margin: 5px 5px;
+    border: 3px solid black;
+}
+.element1{
+    background-image: url("https://st3.depositphotos.com/1177973/14608/i/1600/depositphotos_146083729-stock-photo-scientist-working-in-laboratory.jpg");
+    background-size: cover;
+}
+.element2{
+    background-image: url("https://cdn.futura-sciences.com/buildsv6/images/mediumoriginal/6/5/e/65eda9b59b_101467_01-intro-1561.jpg");
+    background-size: cover;
+}
+.element3{
+    background-image: url("https://cdn.futura-sciences.com/sources/images/dossier/1561/canonique-1561.jpg");
+    background-size: cover;
+}
+.element4{
+    background-image: url("https://st3.depositphotos.com/1004713/16451/i/600/depositphotos_164518972-stock-photo-astonished-scientist-with-explosive-experiment.jpg");
+    background-size: cover;
+}
+.element5{
+    background-image: url("https://thumbs.dreamstime.com/z/expérience-chimique-de-conduite-scientifique-vérifiant-la-réaction-industrie-parfumerie-131848249.jpg");
+    background-size: cover;
+}
+.element6{
+    background-image: url("img/10.jpg");
+    background-size: cover;
+}
+.element7{
+    background-image: url("img/11.jpg");
+    background-size: cover;
+}
+.element8{
+    background-image: url("img/12.jpg");
+    background-size: cover;
+}
+
