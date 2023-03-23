@@ -53,7 +53,7 @@ font-family: var(--main-font);
 }
 
 button:hover {
-  background-color: var(--secondary-color);
+  background-color: var(--accent-color);
 }
 
 .contact-button {
