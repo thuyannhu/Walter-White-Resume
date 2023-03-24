@@ -5,11 +5,88 @@
     justify-content: space-around;
 
 }
+.photo {
+    display: flex;
+  }
 
+  .photo1 img, .photo7 img {
+    height: 340px;
+    width: 314px;
+    align-items: center;
+    justify-content: center;
+    border: 3px solid burlywood;
+    border-radius: 5px;
 
+  }
+  .photo2 img,  .photo3 img {
+    height: 135px;
+    width: 345px;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+    border: 3px solid burlywood;
+   
+  }
+  
+  .photo4 img {
+    height: 120px;
+    width: 295px;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+    border: 3px solid burlywood;
+  
+    
+  }
+  .photo5 img {
+    height: 120px;
+    width: 295px;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+    border: 3px solid burlywood;
 
+  }
+  .photo6 img {
+    height: 120px;
+    width: 295px;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+    border: 3px solid Burlywood;
+  }
+  .photo8 img, .photo9 img {
+    height: 140px;
+    width: 344px;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+    border: 3px solid Burlywood;
+  }
+  .photo10 img, .photo11 img, .photo12 img{
+    height: 120px;
+    width: 295px;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+    border: 3px solid Burlywood;
+
+  }
+
+  .cards {
+    display: flex;
+  }
+  .card1 {
+  width: 10px;
+  flex-shrink: 0;
+}
+
+  
+  .cardText {
+    padding: 2px;
+  }
 .experience{
-    background-image: url("https://fr.shopping.rakuten.com/photo/1706457048_L.jpg"); 
+     
     background-size: cover;
     display: flex;
     align-items: center;
@@ -24,7 +101,6 @@
 }
 
 .experience1{
-    background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQWhOSO_jKXYwqvOXzi1mCo_hybpVbW4dcvWg&usqp=CAU");
     background-size: center,cover;
     display: flex;
     align-items: center;
@@ -39,8 +115,8 @@
 
 }
 .experience p{
-    color: rgb(19, 17, 17);
-    font-family: sans-serif;
+
+    font-family:var( --main-font);
     font-size: 20px;
     text-align: justify;
     align-items: center;
@@ -64,7 +140,7 @@
     border: 3px solid burlywood;
     text-align: justify;
     text-align: center;
-    font-family: sans-serif;
+    font-family: var(--main-font);
 
     
 } 
@@ -77,48 +153,9 @@
     border: 3px solid burlywood;
     text-align: justify;
     text-align: center;
-    font-family: sans-serif;
+    font-family: var(--main-font);
 
 
 }
-.element1{
-    background-image: url("https://pixabay.com/get/g518f3337df13b1eadeac681f23873ca7e887ae94dc7409c90370fc672df5f10752d406ea310d49dcdb455ea4068b484d6364dc3232797ff6562d58f37c3dc3ed_640.jpg");
-    background-size: cover;
-}
-.element2{
-    background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS-WvZW-hRRSkykZ0qelVTEJTQMf-GDGHAi8Q&usqp=CAU");
-    background-size: cover;
-}
-.element3{
-    background-image: url("https://pixabay.com/get/g554750f5a7e69465207e74e08dd4e1a54f164582a122ba759f00108f24981d648c8b4b3f88cc7d36a9d024de3ea0b375_640.jpg");
-    background-size: cover;
-}
-.element4{
-    background-image: url("https://st3.depositphotos.com/1004713/16451/i/600/depositphotos_164518972-stock-photo-astonished-scientist-with-explosive-experiment.jpg");
-    background-size: cover;
-}
-.element5{
-    background-image: url("https://thumbs.dreamstime.com/z/expérience-chimique-de-conduite-scientifique-vérifiant-la-réaction-industrie-parfumerie-131848249.jpg");
-    background-size: cover;
-}
-.element6{
-    background-image: url("https://www.shutterstock.com/image-vector/heroin-diacetylmorphine-opioid-drug-molecule-260nw-1975675226.jpg");
-    background-size: cover;
-}
-.element7{
-    background-image: url("");
-    background-size: cover; 
-}
-.element8{
-    background-image: url("https://crimenb.ca/wp-content/uploads/2022/08/druglab.jpg");
-    background-size: cover;
-}
-.element9{
-    background-image: url("https://img.passeportsante.net/1200x675/2022-04-06/shutterstock-1524354695.webp");
-    background-size: cover;
-}
-.element10{
-    background-image: url("https://www.tntv.pf/tntv/wp-content/uploads/313885cab8.jpeg");
-    background-size: center,cover;
-}
+
 
