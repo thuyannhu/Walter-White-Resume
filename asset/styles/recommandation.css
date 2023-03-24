@@ -1,0 +1,142 @@
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: var(--background-color);
+  font-family: var(--main-font);
+  color: var(--primary-color);
+}
+
+h1 {
+  font-family: var(--title-font);
+  font-size: var(--small-title-font-size);
+  padding: 2% 0% 0 10%;
+}
+
+.slider {
+  display: flex;
+  justify-content: center;
+}
+
+.slider1,
+.slider2 {
+  margin-top: 3%;
+  max-width: 35vw;
+  box-shadow: 1px -1px 31px 1px rgba(120, 120, 120, 1);
+
+  border-radius: 15px;
+  overflow: hidden;
+}
+
+.slider2 {
+  margin-left: 5%;
+}
+
+.cards {
+  display: flex;
+}
+
+.card1,
+.card2,
+.card3 {
+  width: 100%;
+  flex-shrink: 0;
+  animation: slider-horizontal1 20s infinite ease-in-out;
+}
+
+.photo {
+  display: flex;
+  width: 100%;
+}
+
+.photo img {
+  height: 45vh;
+  width: 100%;
+  object-fit: cover;
+  object-position: top;
+}
+
+.labo,
+.cagoule,
+.gang {
+  object-position: bottom;
+}
+
+.cardTitle {
+  font-family: var(--title-font);
+  font-size: var(--small-title-font-size);
+  border-top: 2px solid black;
+  border-bottom: 2px solid black;
+  padding: 2% 0 2% 10%;
+  margin: 0;
+}
+
+.cardText {
+  padding: 2% 3% 2% 2%;
+}
+
+.lightMode {
+  color: var(--primary-color);
+}
+
+.darkMode {
+  color: var(--secondary-color);
+}
+
+/*  Partie animation */
+
+@keyframes slider-horizontal1 {
+
+  0%,
+  28% {
+    transform: translateX(0);
+  }
+
+  33%,
+  61% {
+    transform: translateX(-100%);
+  }
+
+  66%,
+  94% {
+    transform: translateX(-200%);
+  }
+
+  100% {
+    transform: translateX(-300%);
+  }
+}
+
+@media screen and (max-width: 1013px) {
+  .darkMode h3 {
+    font-size: 1.6rem;
+  }
+
+  .slider1,
+  .slider2 {
+    max-width: 40vw;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  body {
+    min-height: auto;
+  }
+
+  h1 {
+    font-size: var(--small-title-font-size);
+    margin-top: 5%;
+  }
+
+  .slider1 {
+    max-width: 70vw;
+    height: 60%;
+    margin-top: 10%;
+  }
+
+  .slider2 {
+    position: absolute;
+    top: -9999px;
+    left: -9999px;
+  }
+}

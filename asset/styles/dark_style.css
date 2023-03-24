@@ -1,0 +1,168 @@
+:root {
+  --primary-color: #d6dadb;
+  --secondary-color: #b1cccd;
+  --accent-color: #717171;
+  --background-color: rgb(17, 17, 17);
+
+  --main-font: Biko_Regular;
+  --title-font: Biko_Bold;
+  --light-font: Biko_Light;
+
+  --text-font-size: 1.2rem;
+  --small-title-font-size: 2rem;
+  --big-title-font-size: 4rem;
+}
+p span.vert{
+  color: rgb(57, 113, 57);
+  font-size: larger;
+  font-weight: bold;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--background-color);
+  min-height: 100vh;
+  min-width: none;
+  font-family: var(--main-font);
+  color: var(--secondary-color);
+}
+
+h1 {
+  font-family: var(--title-font);
+  color: var(--secondary-color);
+}
+
+@font-face {
+  font-family: Biko_Regular;
+  src: url("/asset/styles/fonts/Biko_Regular.otf");
+}
+
+@font-face {
+  font-family: Biko_Bold;
+  src: url("/asset/styles/fonts/Biko_Bold.otf");
+}
+@font-face {
+  font-family: Biko_Light;
+  src: url("/asset/styles/fonts/Biko_Light-Restricted.otf");
+}
+
+/* Gestion de la navbar en burger */
+.navbarBurger {
+  overflow: hidden;
+  position: absolute;
+  top: 0;
+  margin : 8px;
+  z-index: 500;
+}
+
+.navbarBurger a {
+  color: var(--primary-color);
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+  display: block;
+  font-family: var(--main-font);
+}
+
+.navbarBurger #liens {
+  display: none;
+  background-color: rgb(34, 34, 34);
+}
+
+/* style du bouton */
+.navbarBurger a.bouton {
+  background-image: url("/asset/images/index/menu_blanc.png");
+  background-size: cover;
+  display: block;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+.navbarBurger a:hover {
+  color: var(--secondary-color);
+
+}
+
+/* Gestion de la navbar en desktop */
+
+.navbarDesktop {
+  padding: 1rem;
+  background-color: var(--background-color);
+  color:var(--primary-color);
+}
+
+.navbarDesktop a {
+  text-decoration: none;
+  color: var(--primary-color);
+  padding: 1rem;
+  font-family: var(--main-font);
+}
+
+.navbarDesktop a:hover {
+  color: var(--secondary-color);
+}
+
+.theme-button {
+  position: absolute;
+  top: 0;
+  right: 0;
+  background-color: var(--background-color);
+  padding: 0.5rem;
+  margin: 0.5rem;
+  font-family: var(--main-font);
+  color: var(--primary-color);
+}
+
+
+button{
+  padding: 1rem;
+  background-color:var(--background-color) ;
+  color:var(--primary-color);
+  border: var(--primary-color) solid 1px;
+  font-family: var(--main-font);
+}
+button:hover{
+  background-color:var(--accent-color) ;
+}
+
+
+.footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  padding: 5px;
+  font-family: var(--main-font);
+  padding: 5px;
+  background-color: var(--background-color);
+  font-family: var(--main-font);
+  color: var(--primary-color);
+}
+
+.lightMode {
+  display: none;
+}
+
+.walter {
+  display: none;
+}
+
+/* Responsivité : switch de navbar desktop au menu burger */
+
+@media screen and (max-width: 768px) {
+  .navbarDesktop {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 769px) {
+  .navbarBurger {
+    display: none;
+  }
+}
+

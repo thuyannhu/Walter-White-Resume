@@ -1,0 +1,161 @@
+/* @import url(./light_style.css); */
+
+.container{
+    display: flex;
+    justify-content: space-around;
+
+}
+.photo {
+    display: flex;
+  }
+
+  .photo1 img, .photo7 img {
+    height: 340px;
+    width: 314px;
+    align-items: center;
+    justify-content: center;
+    border: 3px solid burlywood;
+    border-radius: 5px;
+
+  }
+  .photo2 img,  .photo3 img {
+    height: 135px;
+    width: 345px;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+    border: 3px solid burlywood;
+   
+  }
+  
+  .photo4 img {
+    height: 120px;
+    width: 295px;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+    border: 3px solid burlywood;
+  
+    
+  }
+  .photo5 img {
+    height: 120px;
+    width: 295px;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+    border: 3px solid burlywood;
+
+  }
+  .photo6 img {
+    height: 120px;
+    width: 295px;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+    border: 3px solid Burlywood;
+  }
+  .photo8 img, .photo9 img {
+    height: 140px;
+    width: 344px;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+    border: 3px solid Burlywood;
+  }
+  .photo10 img, .photo11 img, .photo12 img{
+    height: 120px;
+    width: 295px;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+    border: 3px solid Burlywood;
+
+  }
+
+  .cards {
+    display: flex;
+  }
+  .card1 {
+  width: 10px;
+  flex-shrink: 0;
+}
+
+  
+  .cardText {
+    padding: 2px;
+  }
+.experience{
+     
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    border-radius: 10px;
+    box-shadow: 10px;
+    border: 3px solid burlywood;
+    padding: 20px;
+    width: 320px;
+    height: 530px;
+    margin-top: 30px;
+}
+
+.experience1{
+    background-size: center,cover;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    border-radius: 10px;
+    box-shadow: 10px;
+    border: 3px solid burlywood;
+    padding: 20px;
+    width: 320px;
+    height: 530px;
+    margin-top: 30px;
+
+}
+.experience p{
+
+    font-family:var( --main-font);
+    font-size: 20px;
+    text-align: justify;
+    align-items: center;
+    
+    
+}
+.content-2, .content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+   
+}
+.element1, .element2, .element6, .element7 p {
+    justify-content:space-between;
+    width:350px;
+    height: 200px;
+    margin: 40px;
+    border-radius: 10px;
+    box-shadow: 10px;
+    border: 3px solid burlywood;
+    text-align: justify;
+    text-align: center;
+    font-family: var(--main-font);
+
+    
+} 
+.element3, .element4, .element5, .element8, .element9, .element10 p{
+    width: 300px;
+    height: 170px;
+    margin: 5px 5px;
+    border-radius: 10px;
+    box-shadow: 10px;
+    border: 3px solid burlywood;
+    text-align: justify;
+    text-align: center;
+    font-family: var(--main-font);
+
+
+}
+
+
