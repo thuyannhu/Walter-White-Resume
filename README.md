@@ -1,4 +1,4 @@
-# Walter-White-Resume :alembic: :minibus:
+# Le CV de Walter White :alembic: :minibus:
 
 [Le CV de Walter White](https://thuyannhu.github.io/Walter-White-Resume/index.html) est un site vitrine en HTML/CSS et Javascript qui met en avant le parcours professionnel de Walter White, le personnage principal de la série télé Breaking Bad. C'est un CV double qui affiche le CV d'Heisenberg lors du passage du site en dark mode.
 
