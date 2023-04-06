@@ -38,16 +38,16 @@ h1 {
 
 @font-face {
   font-family: Biko_Regular;
-  src: url("/asset/styles/fonts/Biko_Regular.otf");
+  src: url("fonts/Biko_Regular.otf");
 }
 
 @font-face {
   font-family: Biko_Bold;
-  src: url("/asset/styles/fonts/Biko_Bold.otf");
+  src: url("fonts/Biko_Bold.otf");
 }
 @font-face {
   font-family: Biko_Light;
-  src: url("/asset/styles/fonts/Biko_Light-Restricted.otf");
+  src: url("fonts/Biko_Light-Restricted.otf");
 }
 
 /* Gestion de la navbar en burger */

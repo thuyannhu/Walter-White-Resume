@@ -5,7 +5,7 @@ p span.vert{
 }
 
 body {
-    background-image: url("/asset/images/index/abstract-crop-bw.jpg");
+    background-image: url("../images/index/abstract-crop-bw.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     min-height: 80vh;
@@ -85,18 +85,18 @@ button {
   
   
   @font-face {
-      font-family: Biko_Regular;
-      src: url("/asset/styles/fonts/Biko_Regular.otf");
-    }
-  
-    @font-face {
-      font-family: Biko_Bold;
-      src: url("/asset/styles/fonts/Biko_Bold.otf");
-    }
-    @font-face {
-      font-family: Biko_Light;
-      src: url("/asset/styles/fonts/Biko_Light-Restricted.otf");
-    }
+    font-family: Biko_Regular;
+    src: url("fonts/Biko_Regular.otf");
+  }
+
+  @font-face {
+    font-family: Biko_Bold;
+    src: url("fonts/Biko_Bold.otf");
+  }
+  @font-face {
+    font-family: Biko_Light;
+    src: url("fonts/Biko_Light-Restricted.otf");
+  }
   /* Gestion de la navbar en burger */
  
 .navbarBurger {
