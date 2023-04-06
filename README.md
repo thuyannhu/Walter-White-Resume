@@ -19,6 +19,7 @@ J'ai travaillé principalement sur:
 
 ## Technologies
 HTML/CSS
+
 Javascript
 
 ## Captures d'écran
@@ -54,4 +55,5 @@ La page contact version Heisenberg :
 ## Annexe
 
 Wireframe : [version mobile, version desktop et prototypes de pages d'accueil](https://drive.google.com/file/d/1w9wNpzhjJhEJwLtY3AAD7QvW_EOjfb95/view?usp=sharing)
+
 Présentation du projet : [slides](https://docs.google.com/presentation/d/1j46KnrQMcTacmmDQpxgJmbwZPO5RlVEFszv9hwA0kNI/edit#slide=id.g22382ad7a37_0_221)
